@@ -22,7 +22,7 @@ angular.module('yon.tree-directive', [])
 		
 
 		var diagonal = d3.svg.diagonal()
-		    .projection(function(d) { return [d.y, d.x]; });
+    		.projection(function(d) { return [d.y, d.x]; });
 
 		var postLink = function (scope, element, attrs) {
 
@@ -35,7 +35,7 @@ angular.module('yon.tree-directive', [])
 			var cluster = d3.layout.cluster()
 		    	.size([height, width - 160]);
 			
-			// var data = scope.data;
+			var data = scope.data;
 
 			var svg = d3.select(el).append('svg')
 				.attr({
@@ -54,7 +54,7 @@ angular.module('yon.tree-directive', [])
 				var nodes = cluster.nodes(data);
 				var links = cluster.links(nodes);
 
-				var links = svg.selectAll('.link')
+				var link = svg.selectAll('.link')
 					.data(links)
 					.enter().append('path')
 					.attr({
@@ -67,7 +67,7 @@ angular.module('yon.tree-directive', [])
 					.enter().append('g')
 					.attr({
 						'class': 'node',
-						'tranform': function(d) { return "translate(" + d.y + "," + d.x + ")"; }
+						'transform': function(d) { return "translate(" + d.y + "," + d.x + ")"; }
 					});
 
 				node.append('cicle')
