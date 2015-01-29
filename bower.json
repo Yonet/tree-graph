@@ -1,0 +1,28 @@
+{
+  "name": "tree-graph",
+  "version": "0.0.0",
+  "authors": [
+    "Aysegul Yonet <aysegulyonet@gmail.com>"
+  ],
+  "description": "D3 Tree graph directive based on Mike Bostocks example",
+  "main": "d3-tree.js",
+  "keywords": [
+    "d3",
+    "angular",
+    "directive",
+    "tree",
+    "layout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.11",
+    "d3": "~3.5.3"
+  }
+}
