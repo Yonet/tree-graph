@@ -8,7 +8,7 @@
  * @description
  * # circularTree
  */
-angular.module('yon.tree-directive')
+angular.module('yon.tree-directive', [])
 	.directive('yonTree', [function () {
 
 		
