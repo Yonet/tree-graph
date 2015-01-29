@@ -17,7 +17,7 @@ bower install Yonet/tree-graph
 ```
 
 ## Example
-See the [tree-graph-example](https://github.com/Yonet/tree-graph-example) for an example.
+See the [tree-graph-example repo](https://github.com/Yonet/tree-graph-example) for an usage example.
 
 ```html
 <div ng-app="app">
